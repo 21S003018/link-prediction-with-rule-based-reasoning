@@ -38,13 +38,19 @@ This is a combined framework integrating embedding method and rule-based reasong
 ### environment
 
 LSB Version:	core-4.1-amd64:core-4.1-noarch
+
 Distributor ID:	CentOS
+
 Description:	CentOS Linux release 7.7.1908 (Core)
+
 Release:	7.7.1908
+
 Codename:	Core
+
 cpu cores	: 16
 
 total    used    free   shared buff/cache  available
+
 Mem:      125G     10G    106G     85M    9.0G    114G
 
 ### result
