@@ -20,9 +20,9 @@ This is a combined framework integrating embedding method and rule-based reasong
 3. After the first two steps, some other pre-parations follow. And these codes are contained in preprocess.py.
 
    - **pyhon preprocess.py 1** simplify_rules
-- **pyhon preprocess.py 2** construct_knowledge_base
+   - **pyhon preprocess.py 2** construct_knowledge_base
    - **pyhon preprocess.py 3** rating rules
-- **pyhon preprocess.py 4** simplify test set
+   - **pyhon preprocess.py 4** simplify test set
    - **pyhon preprocess.py 5** filter test set
 
 4. compile reasoning with **g++ -std=c++11 -O2 reasoning.cpp**, and run with **./a.out X**
