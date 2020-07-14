@@ -593,7 +593,7 @@ void formal_experiment(){
 
     }
 
-    FILE* ansfile = fopen(str_cat("ans/",pid,".txt"),"w");
+    FILE* ansfile = fopen("ans.txt","w");
     fprintf(ansfile,"reasoning:sum of rank, sum of reciprocal ranking,sum of hit@1,sum of hit@3,sum of hit@5,sum of hit@10:%d,%f,%d,%d,%d,%d\n",sum,mrr_sum,hit_at_1_sum,hit_at_3_sum,hit_at_5_sum,hit_at_10_sum);
     fprintf(ansfile,"trans:sum of rank, sum of reciprocal ranking,sum of hit@1,sum of hit@3,sum of hit@5,sum of hit@10:%d,%f,%d,%d,%d,%d\n",sum_trans,mrr_sum_trans,hit_at_1_sum_trans,hit_at_3_sum_trans,hit_at_5_sum_trans,hit_at_10_sum_trans);
     fclose(ansfile);
@@ -682,16 +682,13 @@ void test_experiment(){
 
     }
 
-    FILE* ansfile = fopen(str_cat("ans/",pid,".txt"),"w");
+    FILE* ansfile = fopen("ans.txt","w");
     fprintf(ansfile,"reasoning:sum of rank, sum of reciprocal ranking,sum of hit@1,sum of hit@3,sum of hit@5,sum of hit@10:%d,%f,%d,%d,%d,%d\n",sum,mrr_sum,hit_at_1_sum,hit_at_3_sum,hit_at_5_sum,hit_at_10_sum);
     fprintf(ansfile,"trans:sum of rank, sum of reciprocal ranking,sum of hit@1,sum of hit@3,sum of hit@5,sum of hit@10:%d,%f,%d,%d,%d,%d\n",sum_trans,mrr_sum_trans,hit_at_1_sum_trans,hit_at_3_sum_trans,hit_at_5_sum_trans,hit_at_10_sum_trans);
     fclose(ansfile);
     return;
 }
 
-    reasoning(testset[id].h,testset[id].r,testset[id].t);
-    cout << "debug over!" << endl;
-}
 int main(int argc,char**argv){
     prepare();
 	trans = argv[1];
